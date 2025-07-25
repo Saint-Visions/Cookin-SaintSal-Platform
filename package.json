@@ -1,0 +1,66 @@
+{
+  "name": "cookin-clean",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@builder.io/dev-tools": "^1.7.25",
+    "@builder.io/react": "^8.2.6",
+    "@builder.io/sdk": "^6.1.2",
+    "@radix-ui/react-accordion": "^1.2.4",
+    "@tanstack/react-query": "^5.60.5",
+    "axios": "^1.11.0",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "dotenv": "^17.2.0",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "framer-motion": "^11.18.2",
+    "lucide-react": "^0.453.0",
+    "memoizee": "^0.4.17",
+    "next": "^15.4.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.55.0",
+    "tailwind-merge": "^2.6.0",
+    "ws": "^8.18.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.0.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.27.0",
+    "eslint-config-next": "^12.0.0",
+    "jest": "^28.0.0",
+    "postcss": "^8.4.47",
+    "prettier": "^2.8.3",
+    "tailwindcss": "^3.4.17",
+    "ts-jest": "^28.0.0",
+    "typescript": "^5.6.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "next/core-web-vitals"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 2
+  },
+  "browserslist": ">0.2%, not dead, not op_mini all",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
