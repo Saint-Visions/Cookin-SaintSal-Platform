@@ -1,10 +1,14 @@
+// src/app/layout.tsx
+'use client';  // Add this at the very top
+
 import FooterLinksGrid from '@/components/layout/FooterLinksGrid';
 import { usePathname } from 'next/navigation';
 
-export default function RootLayout({ children }) {
-  const pathname = usePathname();
+import { ReactNode } from 'react';
 
-  const showFooter = !pathname.startsWith('/workspace');
+export default function RootLayout({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
+  const showFooter = !(pathname?.startsWith('/workspace'));
 
   return (
     <html lang="en">
