@@ -20,22 +20,32 @@ export default function TopNav() {
         />
         <div className="text-white leading-tight">
           <div className="text-xl font-bold">SaintVisionAI™</div>
-          <div className="text-xs text-gold">Cookin' Knowledge</div>
+          <div className="text-xs text-gold">Cookin&#39; Knowledge</div>
         </div>
       </Link>
 
       {/* Navigation Links */}
       <nav className="hidden md:flex gap-6 items-center text-white text-sm font-medium">
-        <Link href="/pricing" className="hover:text-gold transition">Pricing</Link>
-        <Link href="/why" className="hover:text-gold transition">Why Us</Link>
-        <Link href="/help" className="hover:text-gold transition">Help</Link>
+        <Link href="/pricing" className="hover:text-gold transition">
+          Pricing
+        </Link>
+        <Link href="/why" className="hover:text-gold transition">
+          Why Us
+        </Link>
+        <Link href="/help" className="hover:text-gold transition">
+          Help
+        </Link>
+
+        {/* Conditional Rendering for Sign In or Start Cookin' */}
         {isHome ? (
-          <Link href="/signin" className="text-cyan-400 hover:underline">Sign In</Link>
+          <Link href="/signin" className="text-cyan-400 hover:underline">
+            Sign In
+          </Link>
         ) : (
           <Link href="/workspace">
-            <span className="bg-[#FFD700] text-black px-5 py-2 rounded-lg text-sm font-bold hover:bg-yellow-400 transition shadow-md">
+            <a className="bg-[#FFD700] text-black px-5 py-2 rounded-lg text-sm font-bold hover:bg-yellow-400 transition shadow-md">
               Start Cookin’
-            </span>
+            </a>
           </Link>
         )}
       </nav>
