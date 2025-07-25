@@ -20,3 +20,4 @@ dist/
 # Next.js files
 .next/
 
+.vercel

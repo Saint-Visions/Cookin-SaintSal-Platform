@@ -1,21 +1,16 @@
-"use client";
+import FooterLinksGrid from '@/components/layout/FooterLinksGrid';
+import { usePathname } from 'next/navigation';
 
-import "./globals.css";
-import { usePathname } from "next/navigation";
-import GlobalFooter from "@/components/GlobalFooter";
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }) {
   const pathname = usePathname();
 
-  const hideFooterOn = ["/workspace"];
-
-  const showFooter = !hideFooterOn.includes(pathname);
+  const showFooter = !pathname.startsWith('/workspace');
 
   return (
     <html lang="en">
-      <body className="bg-black text-white flex flex-col min-h-screen">
-        <main className="flex-grow">{children}</main>
-        {showFooter && <GlobalFooter />}
+      <body>
+        {children}
+        {showFooter && <FooterLinksGrid />}
       </body>
     </html>
   );

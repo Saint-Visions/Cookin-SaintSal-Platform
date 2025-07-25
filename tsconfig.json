@@ -9,12 +9,15 @@
     "skipLibCheck": true,
     "allowImportingTsExtensions": true,
     "moduleResolution": "bundler",
-    "baseUrl": ".",
+    "baseUrl": ".", // Base directory for resolving paths
     "types": ["node", "vite/client"],
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "noEmit": true,  // Do not emit any files; Next.js handles it
-    "isolatedModules": true // Required for SWC/Babel to work properly
+    "isolatedModules": true, // Required for SWC/Babel to work properly
+    "paths": {
+      "@/*": ["src/*"] // Adding path alias for `@`
+    }
   },
   "include": [
     "src/**/*", // Include all files in src
@@ -28,4 +31,3 @@
     "out" // Exclude static export folder
   ]
 }
-
