@@ -10,10 +10,10 @@
     "allowImportingTsExtensions": true,
     "moduleResolution": "bundler",
     "baseUrl": ".", // Base directory for resolving paths
-    "types": ["node", "vite/client"],
+    "types": ["node"],
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "noEmit": true,  // Do not emit any files; Next.js handles it
+    "noEmit": true, // Do not emit any files; Next.js handles it
     "isolatedModules": true, // Required for SWC/Babel to work properly
     "paths": {
       "@/*": ["src/*"] // Adding path alias for `@`
@@ -31,3 +31,4 @@
     "out" // Exclude static export folder
   ]
 }
+
