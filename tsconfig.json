@@ -22,7 +22,9 @@
     "noEmit": true, // Do not emit output files; Next.js handles it
     "isolatedModules": true, // Ensures that the code is properly isolated for SWC/Babel
     "paths": {
-      "@/*": ["src/*"] // Adds path alias for `@`
+      "@/*": [
+        "src/*"
+      ] // Adds path alias for `@`
     },
     "allowJs": true, // Allows JavaScript files to be imported
     "incremental": true, // Enables incremental compilation for faster builds
@@ -35,6 +37,8 @@
   "include": [
     "next-env.d.ts", // Includes Next.js types
     "src/**/*" // Includes all files in the src directory
+    ,
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules", // Excludes node_modules from the build
