@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "test": "jest"
   },
   "dependencies": {
     "next": "^15.4.4",
@@ -19,12 +21,43 @@
     "zod": "^3.24.2",
     "react-hook-form": "^7.55.0",
     "lucide-react": "^0.453.0",
-    "framer-motion": "^11.18.2"
+    "framer-motion": "^11.18.2",
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.0",
+    "date-fns": "^3.6.0",
+    "memoizee": "^0.4.17",
+    "ws": "^8.18.0",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "eslint": "^8.27.0",
+    "eslint-config-next": "^12.0.0",
+    "prettier": "^2.8.3",
+    "jest": "^28.0.0",
+    "ts-jest": "^28.0.0",
+    "@types/jest": "^28.0.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "next/core-web-vitals"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "tabWidth": 2
+  },
+  "browserslist": ">0.2%, not dead, not op_mini all",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
   }
 }
